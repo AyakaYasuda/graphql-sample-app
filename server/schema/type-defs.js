@@ -20,9 +20,9 @@ const typeDefs = gql`
 
   type Query {
     users: [User!]!
-    user(id: ID!): User
+    user(id: ID!): User!
     movies: [Movie!]!
-    movie(name: String!): Movie
+    movie(name: String!): Movie!
   }
 
   input CreateUserInput {
@@ -50,6 +50,7 @@ const typeDefs = gql`
     INDIA
     GERMANY
     CHILE
+    JAPAN
   }
 `;
 
