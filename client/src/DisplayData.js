@@ -13,6 +13,23 @@ const QUERY_ALL_USERS = gql`
   }
 `;
 
+// WITH UNION TYPE
+// query GetAllUsers {
+//   users {
+//     ... on UsersSuccessfulResult {
+//       users {
+//         id
+//         name
+//         age
+//       }
+//     }
+
+//     ... on UsersErrorResult {
+//       message
+//     }
+//   }
+// }
+
 const QUERY_ALL_MOVIES = gql`
   query GetAllMovies {
     movies {
